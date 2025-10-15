@@ -1,0 +1,126 @@
+╔════════════════════════════════════════════════════════════════╗
+║               🚀 HOW TO START CHORECORE                        ║
+╚════════════════════════════════════════════════════════════════╝
+
+WHERE TO RUN THE COMMAND?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Run it in your TERMINAL (Mac/Linux) or COMMAND PROMPT (Windows)
+inside your ChoreCore project folder!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🍎 MAC USERS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open VS Code
+2. Click: File → Open Folder → Select "chorecore" folder
+3. Press: Ctrl + ` (backtick key, above Tab)
+4. Type: npm run dev:mobile
+5. Press: Enter
+
+You should see:
+  ➜  Network: http://192.168.1.100:5173/
+
+Copy that URL!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🪟 WINDOWS USERS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open VS Code
+2. Click: File → Open Folder → Select "chorecore" folder
+3. Press: Ctrl + ` (backtick key, above Tab)
+4. Type: npm run dev:mobile
+5. Press: Enter
+
+You should see:
+  ➜  Network: http://192.168.1.100:5173/
+
+Copy that URL!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 ON YOUR PHONE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Make sure phone is on SAME WiFi as computer
+2. Open Safari (iPhone) or Chrome (Android)
+3. Type the Network URL from above
+4. ChoreCore loads! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DON'T HAVE VS CODE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mac:
+  1. Press: Cmd + Space
+  2. Type: Terminal
+  3. Press: Enter
+  4. Type: cd /path/to/chorecore
+  5. Type: npm run dev:mobile
+
+Windows:
+  1. Press: Windows Key
+  2. Type: cmd
+  3. Press: Enter
+  4. Type: cd C:\path\to\chorecore
+  5. Type: npm run dev:mobile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIRST TIME SETUP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before running dev:mobile, run this ONCE:
+
+  npm install
+
+Then you can run:
+
+  npm run dev:mobile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMPLETE BEGINNER GUIDE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Download and install VS Code: https://code.visualstudio.com/
+2. Download and install Node.js: https://nodejs.org/
+3. Open VS Code
+4. Click: File → Open Folder
+5. Find and select your "chorecore" folder
+6. Press: Ctrl + ` (opens terminal at bottom)
+7. Type: npm install (wait for it to finish)
+8. Type: npm run dev:mobile
+9. Look for the Network URL
+10. Open that URL on your phone's browser!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VISUAL CHECK - AM I IN THE RIGHT PLACE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your terminal should show "chorecore" somewhere:
+
+✅ GOOD:
+  user@computer chorecore %
+  C:\Users\Name\chorecore>
+
+❌ BAD:
+  user@computer Downloads %
+  C:\Users\Name>
+
+If you don't see "chorecore", navigate to it:
+  cd /path/to/chorecore
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NEED MORE HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Read: WHERE_TO_RUN_COMMANDS.md (detailed step-by-step)
+
+╚════════════════════════════════════════════════════════════════╝
