@@ -1,0 +1,80 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                    HOW TO STAY LOGGED IN                          ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+✅ FIXED: Login now persists properly!
+✅ ADDED: "Keep me logged in" checkbox (checked by default)
+
+═══════════════════════════════════════════════════════════════════
+
+HOW TO USE:
+═══════════════════════════════════════════════════════════════════
+
+1. Go to the Sign In page
+2. Enter your email and password
+3. ✅ Make sure "Keep me logged in" is CHECKED (it's checked by default)
+4. Click "Sign In"
+5. You'll stay logged in even after closing the browser!
+
+═══════════════════════════════════════════════════════════════════
+
+IF YOU'RE NOT STAYING LOGGED IN:
+═══════════════════════════════════════════════════════════════════
+
+❌ Common causes:
+  • Browser is in Private/Incognito mode
+  • "Keep me logged in" checkbox was unchecked
+  • Browser is blocking localStorage
+  • Old session data is corrupted
+
+✅ Solutions:
+  1. Make sure you're NOT in Private/Incognito mode
+  2. Check the "Keep me logged in" box when signing in
+  3. Clear browser cache and cookies, then log in again
+  4. Try a different browser to test
+
+═══════════════════════════════════════════════════════════════════
+
+TO CHECK IF YOU'RE LOGGED IN:
+═══════════════════════════════════════════════════════════════════
+
+Open browser console (F12) and look for:
+  ✅ Session found! User: your@email.com
+  👤 User role loaded: admin
+
+If you see these messages, you're logged in!
+
+═══════════════════════════════════════════════════════════════════
+
+TO CLEAR YOUR SESSION AND START FRESH:
+═══════════════════════════════════════════════════════════════════
+
+Option 1: Click "Logout" in the app navigation
+
+Option 2: Paste this in browser console (F12):
+  localStorage.clear();
+  window.location.reload();
+
+Then log in again with "Keep me logged in" CHECKED.
+
+═══════════════════════════════════════════════════════════════════
+
+ADMIN NOT RECOGNIZED?
+═══════════════════════════════════════════════════════════════════
+
+If you log in but don't see admin features:
+
+1. Open browser console (F12)
+2. Check for this message: "👤 User role loaded: admin"
+3. If it says "member" instead:
+   - Make sure you're using the account that CREATED the house
+   - The first person to create a house = admin
+   - Everyone who joins = member
+
+4. If it doesn't show any role:
+   - Try logging out and back in
+   - Check database has your user in user_profiles table
+
+═══════════════════════════════════════════════════════════════════
+
+For more details, see SESSION_PERSISTENCE_FIXED.md
