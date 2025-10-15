@@ -1,0 +1,51 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                     BROWSER CONSOLE COMMAND                        ║
+║                  (Copy and paste this entire block)                ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+HOW TO OPEN CONSOLE:
+  • Press F12 (all browsers)
+  • OR right-click → Inspect → Console tab
+  • OR Ctrl+Shift+J (Windows/Linux) / Cmd+Option+J (Mac)
+
+THEN PASTE THIS:
+════════════════════════════════════════════════════════════════════
+
+fetch('https://ybrwsmhxcxjqxvjyzivb.supabase.co/functions/v1/make-server-28dd5996/database-check', {
+  headers: {
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlicndzbWh4Y3hqcXh2anl6aXZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM4NjgxMzIsImV4cCI6MjA0OTQ0NDEzMn0.hkWLPHKb3Zq-_kfJUiOEsgAiD4LvVGMX8_XHfJPMEho'
+  }
+})
+.then(r => r.json())
+.then(data => {
+  console.log('✅ Database Check Result:', data);
+  if (data.isSetup) {
+    console.log('🎉 SUCCESS! All tables are set up correctly!');
+    console.log('You can now create an account!');
+  } else {
+    console.log('⚠️ Missing tables:', data.missingTables);
+    console.log('👉 Run the SQL script in your Supabase SQL Editor first');
+    console.log('👉 Visit your app with ?admin-setup in the URL for instructions');
+  }
+})
+.catch(err => console.error('❌ Error checking database:', err));
+
+════════════════════════════════════════════════════════════════════
+
+WHAT YOU SHOULD SEE:
+
+  ✅ If database IS set up:
+     Database Check Result: {isSetup: true, missingTables: [], ...}
+     🎉 SUCCESS! All tables are set up correctly!
+
+  ⚠️ If database NOT set up:
+     Database Check Result: {isSetup: false, missingTables: [...], ...}
+     Missing tables: ["user_profiles", "recurring_tasks", "chores"]
+     👉 Run the SQL script...
+
+════════════════════════════════════════════════════════════════════
+
+MORE DETAILED DOCS:
+  • See AUTHENTICATION_FIXED.md for what was fixed
+  • See BROWSER_CONSOLE_COMMANDS.md for more debug commands
+  • See DATABASE_SETUP.md for SQL setup instructions
