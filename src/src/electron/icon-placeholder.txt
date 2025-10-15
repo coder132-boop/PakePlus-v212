@@ -1,0 +1,34 @@
+# ChoreCore Icon Placeholder
+
+This file is a placeholder for the actual application icons.
+
+## To Build Desktop App
+
+You need to add the following icon files to this folder:
+
+1. **icon.png** (1024x1024) - For Linux builds
+2. **icon.ico** (multi-size) - For Windows builds
+3. **icon.icns** (multi-size) - For macOS builds
+
+## Quick Solution
+
+If you don't have icons yet, you can:
+
+1. Create a simple 1024x1024 PNG with ChoreCore branding
+2. Use online tools to convert:
+   - [iConvert Icons](https://iconverticons.com/online/)
+   - [CloudConvert](https://cloudconvert.com/png-to-ico)
+
+## Placeholder Icons
+
+The app will build with placeholder icons, but for professional distribution,
+replace these with your actual ChoreCore logo.
+
+## Recommended Design
+
+- House icon with checkmark
+- Teal/cyan gradient (#00C2A8 to #00FFD1)
+- Simple, recognizable at small sizes
+- Works on light and dark backgrounds
+
+See /electron/README.md for detailed instructions.
