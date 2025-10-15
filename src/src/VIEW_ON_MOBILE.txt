@@ -1,0 +1,63 @@
+╔════════════════════════════════════════════════════════════════╗
+║                  📱 VIEW CHORECORE ON MOBILE                   ║
+╚════════════════════════════════════════════════════════════════╝
+
+⚠️  IMPORTANT: ChoreCore is a WEB APP, not a Figma file!
+    Use your phone's BROWSER, not the Figma mobile app.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+METHOD 1: Test Locally (Same WiFi)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ON YOUR COMPUTER:
+  1. Open terminal
+  2. Run: npm run dev:mobile
+  3. Look for: ➜ Network: http://192.168.1.xxx:5173/
+  4. Copy that URL
+
+ON YOUR PHONE:
+  1. Make sure on SAME WiFi as computer
+  2. Open Safari or Chrome (NOT Figma!)
+  3. Type the Network URL
+  4. ChoreCore loads! ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+METHOD 2: Deploy Online (Access Anywhere)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Install: npm install -g vercel
+  2. Deploy: vercel
+  3. Get URL: https://chorecore-xxx.vercel.app
+  4. Open on ANY device, ANY browser, ANYWHERE! 🌍
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMMON QUESTIONS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: Can I view this in Figma mobile app?
+A: NO. ChoreCore is a web app. Use Safari/Chrome on your phone.
+
+Q: Do I need to export from Figma?
+A: NO. ChoreCore is already a complete web app.
+
+Q: Where do I open this?
+A: In your phone's WEB BROWSER (Safari, Chrome, etc.)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DETAILED GUIDES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  📖 HOW_TO_VIEW_ON_PHONE.md    - Visual step-by-step guide
+  📖 MOBILE_TESTING_GUIDE.md    - Complete testing guide  
+  📖 MOBILE_QUICK_START.md      - Quick reference
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TL;DR: Run "npm run dev:mobile" → Open Network URL in phone's
+       browser (Safari/Chrome), NOT in Figma app! 🚀
+
+╚════════════════════════════════════════════════════════════════╝
