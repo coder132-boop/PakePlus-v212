@@ -1,0 +1,96 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║          🔧 CHORECORE BLANK SCREEN - QUICK FIX                ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+WHY IT'S BLANK:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your PakePlus app tries to load http://localhost:4173
+BUT the preview server isn't running = blank screen!
+
+PakePlus doesn't bundle your app - it just creates a native 
+window that loads a URL (like a dedicated browser).
+
+
+QUICK FIX (Choose One):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────┐
+│  METHOD 1: Test Locally (Quick Testing)                     │
+└─────────────────────────────────────────────────────────────┘
+
+1. Start preview server (keep it running):
+   
+   npm run preview
+
+2. Open your ChoreCore app
+
+   ✅ It works now!
+
+   Note: Server must stay running while you use the app.
+
+
+┌─────────────────────────────────────────────────────────────┐
+│  METHOD 2: Deploy & Package (For Real Distribution)         │
+└─────────────────────────────────────────────────────────────┘
+
+1. Deploy to Vercel:
+   
+   npm install -g vercel
+   vercel --prod
+   
+   You'll get: https://chorecore-xyz.vercel.app
+
+2. Test in browser - make sure it works!
+
+3. Delete old app and create new one:
+   
+   rm -rf output/
+   pake https://chorecore-xyz.vercel.app --name ChoreCore
+
+4. Open from /output folder
+
+   ✅ Works standalone! Can distribute to users!
+
+
+WHICH METHOD?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Method 1 (Local):
+  ✅ Quick testing
+  ✅ Development
+  ❌ Can't share with others
+  ❌ Need server running
+
+Method 2 (Deploy):
+  ✅ Real distribution
+  ✅ Standalone app
+  ✅ Share with anyone
+  ✅ No server needed
+  ⭐ RECOMMENDED FOR PRODUCTION
+
+
+MORE INFO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Read these files:
+  • START_APP_NOW.md    - Quick start guide
+  • FIX_BLANK_SCREEN.md - Detailed troubleshooting
+  • DEPLOY_FIRST.md     - Complete deployment guide
+
+
+REMEMBER:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PakePlus = Web wrapper (loads URL)
+NOT a bundler (doesn't package your code)
+
+For production: Deploy first, then package the deployed URL!
+
+
+╔═══════════════════════════════════════════════════════════════╗
+║  Choose Method 1 for quick testing                            ║
+║  Choose Method 2 for real distribution                        ║
+╚═══════════════════════════════════════════════════════════════╝
