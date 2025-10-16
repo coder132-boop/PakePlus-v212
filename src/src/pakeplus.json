@@ -1,0 +1,43 @@
+{
+  "name": "ChoreCore",
+  "version": "1.0.0",
+  "productName": "ChoreCore - The Core of Clean",
+  "description": "A modern household task management app for shared living spaces",
+  "author": "ChoreCore Team",
+  "icon": "public/icon.png",
+  "url": "http://localhost:5173",
+  "width": 1200,
+  "height": 800,
+  "minWidth": 800,
+  "minHeight": 600,
+  "resizable": true,
+  "fullscreen": false,
+  "transparent": false,
+  "alwaysOnTop": false,
+  "skipTaskbar": false,
+  "showMenu": false,
+  "showSystemTray": true,
+  "systemTrayIcon": "public/tray-icon.png",
+  "multiArch": true,
+  "targets": ["deb", "appimage", "nsis", "dmg"],
+  "linux": {
+    "category": "Utility",
+    "desktop": {
+      "Name": "ChoreCore",
+      "Comment": "Smart Habits, Clean Homes",
+      "Categories": "Utility;Office;",
+      "Keywords": "chores;tasks;household;management;"
+    }
+  },
+  "windows": {
+    "hideConsole": true,
+    "installer": {
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "mac": {
+    "category": "public.app-category.productivity",
+    "minimumSystemVersion": "10.14.0"
+  }
+}
