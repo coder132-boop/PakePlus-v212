@@ -28,8 +28,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
-    // For Electron, use relative paths
-    base: process.env.ELECTRON ? './' : '/',
     rollupOptions: {
       output: {
         manualChunks: {
