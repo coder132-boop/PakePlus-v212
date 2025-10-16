@@ -35,6 +35,31 @@ npm run dev
 3. Create your first admin account
 4. Start managing chores!
 
+### 🖥️ Desktop App (PakePlus)
+
+**Got a blank screen?** → Read `/BLANK_SCREEN_FIX.txt`
+
+ChoreCore uses PakePlus for lightweight desktop apps (5-10MB vs 80MB+).
+
+**Quick Test:**
+```bash
+npm run preview  # Keep running
+# Open your desktop app - works now!
+```
+
+**Production Distribution:**
+```bash
+# 1. Deploy to web first
+vercel --prod
+
+# 2. Package deployed URL (not localhost!)
+pake https://your-deployed-url.com --name ChoreCore
+
+# 3. Distribute to users
+```
+
+📚 **Docs:** `/START_APP_NOW.md` | `/DEPLOY_FIRST.md` | `/PAKEPLUS_SETUP.md`
+
 ---
 
 ## ✨ Features
